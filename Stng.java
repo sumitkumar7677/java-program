@@ -4,7 +4,7 @@
 public class Stng {
     public static void main(String[] args){
 
-        String s1 =  "My name is Sumit";
+        String s1 =  "My name is Sumitt";
         System.out.println(s1);
         System.out.println(s1.toUpperCase());
         System.out.println(s1.toLowerCase());
