@@ -13,6 +13,6 @@ public class SumArray {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5}; // Example array
         int result = SumArray(numbers);  // Call the SumArray method
-        System.out.println("Sum of array elements: " + result); // Print the result
+        System.out.println("Sum of array elementss: " + result); // Print the result
     }
 }
