@@ -17,6 +17,6 @@ public class Constant {
     // Main method
     public static void main(String[] args) {
         Constant.ConstantTime(); // Call the ConstantTime method
-        Constant.LinearTime();   // Call the LinearTime method
+        Constant.LinearTime() ;   // Call the LinearTime method
     }
 }
