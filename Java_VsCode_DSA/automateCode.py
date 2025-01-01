@@ -39,7 +39,7 @@ def auto_commit_and_push():
         print(f"An error occurred: {e}")
 
 # Schedule the task every minute
-schedule.every(1).minutes.do(auto_commit_and_push)
+schedule.every(59).minutes.do(auto_commit_and_push)
 
 print("Automation script is running. Press Ctrl+C to stop.")
 
