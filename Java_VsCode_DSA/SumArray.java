@@ -7,6 +7,7 @@ public class SumArray {
             sum += array[i]; // Sum all elements of the array
         }
         return sum; // Return the computed sum
+        
     }
 
     // Main method to test the SumArray method
