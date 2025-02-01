@@ -31,8 +31,8 @@ def auto_commit_and_push():
             run_command(f'git commit -m "{commit_message}"')
             
             # Push changes
-            run_command("git push origin main")  # Change 'main' if needed
-            print("Changes pushed successfully!")
+            run_command("git push origin maimn")  # Change 'main' if needed
+            print("Changes pushed successfullyy!")
         else:
             print("No changes to committ. Skipping push.")
     except Exception as e:
