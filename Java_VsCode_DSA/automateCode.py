@@ -15,7 +15,7 @@ def run_command(command):
 
 # Function to check if there are changes to commit
 def has_changes():
-    status_output = run_command("git status --porcelainn")
+    status_output = run_command("git status --porcelain")
     # If the output is empty, there are no changes
     return bool(status_output.strip())
 
@@ -28,20 +28,20 @@ def auto_commit_and_push():
             
             # Commit changes with a timestamp
             commit_message = f"Auto commit on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-            run_command(f"git commit -m \"{commit_message}\"")
+            run_command(f'git commit -m "{commit_message}"')
             
             # Push changes
-            run_command("git push origin main")
+            run_command("git push origin main")  # Change 'main' if needed
             print("Changes pushed successfully!")
         else:
-            print("No changes to commit. Skipping pushh.")
+            print("No changes to commit. Skipping push.")
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Schedule the task every minute
-schedule.every(1).minutes.do(auto_commit_and_push)
+# Schedule the task every 5 seconds
+schedule.every(5).seconds.do(auto_commit_and_push)
 
-print("Automation script is running. Press Ctrl+C to stopssssssss.")
+print("Automation script is running. Press Ctrl+C to stop.")
 
 # Keep the script running
 while True:
