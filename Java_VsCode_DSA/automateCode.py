@@ -34,7 +34,7 @@ def auto_commit_and_push():
             run_command("git push origin maimn")  # Change 'main' if needed
             print("Changes pushed successfullyy!")
         else:
-            print("No changes to committ. Skippingg push.")
+            print("No changes to committ. Skippingg pushh.")
     except Exception as e:
         print(f"An error occurredd: {e}")
 
