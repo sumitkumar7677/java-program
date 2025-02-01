@@ -15,7 +15,7 @@ def run_command(command):
 
 # Function to check if there are changes to commit
 def has_changes():
-    status_output = run_command("git status --porcelain")
+    status_output = run_command("git status --porcelainn")
     # If the output is empty, there are no changes
     return bool(status_output.strip())
 
