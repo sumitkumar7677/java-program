@@ -34,9 +34,9 @@ def auto_commit_and_push():
             run_command("git push origin maimn")  # Change 'main' if needed
             print("Changes pushed successfullyy!")
         else:
-            print("No changes to committ. Skipping push.")
+            print("No changes to committ. Skippingg push.")
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurredd: {e}")
 
 # Schedule the task every 5 seconds
 schedule.every(5).seconds.do(auto_commit_and_push)
