@@ -41,7 +41,7 @@ def auto_commit_and_push():
 # Schedule the task every 5 seconds
 schedule.every(5).seconds.do(auto_commit_and_push)
 
-print("Automation script is running. Press Ctrl+C to stopp.........")
+print("Automation script is running. Press Ctrl+C to stopp..........")
 
 # Keep the script running
 while True:
