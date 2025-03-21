@@ -47,3 +47,4 @@ print("Automation script is running. Press Ctrl+C to stop.............hjkzxc ...
 while True:
     schedule.run_pending()
     time.sleep(1)
+..
